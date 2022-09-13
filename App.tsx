@@ -7,10 +7,9 @@ import './style.css';
 export default function App() {
   return (
     <div className="App">
-        <h2>Using CKEditor 5 in React</h2>
         <CKEditor
             editor={ ClassicEditor }
-            data="<p>Hello from CKEditor 5!</p>"
+            data="<p>Hello from CKEditor 5!</p><h1>See inpector in action</h1><ul><li>Check the Model</li><li>See the View (output)</li><li>Check available commands</li></ul>"
             onReady={ editor => {
                 console.log( 'CKEditor React Component is ready to use!', editor );
                 CKEditorInspector.attach( editor );
